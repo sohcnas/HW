@@ -7,14 +7,14 @@
 
 int rand = new Random().Next(10, 100);
 Console.WriteLine("Рандомное число равно " + rand);
-int a = rand / 10;
-int b = rand % 10;
+int a = FindFirstDigitNumber(rand);
+int b = FindSecondDigitNumber(rand);
 FindLargestNumber( a, b);
 
 int rand1 = new Random().Next(10, 100);
 Console.WriteLine("Рандомное число равно " + rand1);
-int a1 = rand1 / 10;
-int b1 = rand1 % 10;
+int a1 = FindFirstDigitNumber(rand1);
+int b1 = FindSecondDigitNumber(rand1);
 FindLargestNumber( a1, b1);
 
 void FindLargestNumber( int a, int b)
@@ -31,4 +31,16 @@ void FindLargestNumber( int a, int b)
     {
         Console.WriteLine("Числа равны");
     }
+}
+
+int FindFirstDigitNumber(int r)
+{
+    int result = r / 10;
+    return result;
+}
+
+int FindSecondDigitNumber(int r)
+{
+    int result = r % 10;
+    return result;
 }
