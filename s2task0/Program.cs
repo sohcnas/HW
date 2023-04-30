@@ -11,6 +11,11 @@ int a = rand / 10;
 int b = rand % 10;
 FindLargestNumber( a, b);
 
+int rand1 = new Random().Next(10, 100);
+Console.WriteLine("Рандомное число равно " + rand1);
+int a1 = rand1 / 10;
+int b1 = rand1 % 10;
+FindLargestNumber( a1, b1);
 
 void FindLargestNumber( int a, int b)
 {
