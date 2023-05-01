@@ -12,13 +12,19 @@ void Main ()
     int Number = int.Parse(Console.ReadLine());
     if (Number > 99 && Number < 1000)
     {
-        Number = Number / 10; // убираем разряд едениц
-        Number = Number % 10; // получаем вторую цифру
+        Number = ToDigit (Number);
         Console.WriteLine("Вторя цифра числа равна " + Number);
     }
     else
     {
         Console.WriteLine("Введеное число " + Number + " не трехзначное");
     }
+}
+
+int ToDigit (int Number)
+{
+    Number = Number / 10; // убираем разряд едениц
+    Number = Number % 10; // получаем вторую цифру
+    return Number;
 }
 
