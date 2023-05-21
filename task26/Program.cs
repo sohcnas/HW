@@ -20,7 +20,7 @@ int Prompt ()
 void NumberCount (int number)
 {
     int count = 1;
-    for(int i = 1; i < number; i = i * 10)
+    for(int i = 9; i < number; i = i * 10 + 9)
     {
         count++;
     }
