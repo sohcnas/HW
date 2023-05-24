@@ -30,7 +30,7 @@ void GetMaxMinDifference(double[] array)
 {
     double min = 0, max = 0;
     min = max = array[0];
-    for (int i = 1; i < array.Length - 1; i++)
+    for (int i = 1; i < array.Length; i++)
     {
         if (min > array[i]) min = array[i];
         else if (max < array[i]) max = array[i];
